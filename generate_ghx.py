@@ -213,6 +213,7 @@ def make_python(x, y, w, h, name, nickname, description, inputs, outputs, code,
         p.str_("NickName",     inp.get("nick", inp["name"][:6]))
         p.bool_("Optional",    inp.get("optional", True))
         srcs = sources.get(i, [])
+        p.int_("SourceCount", len(srcs))
         for si, sg in enumerate(srcs):
             p.guid_("Source", sg, index=si)
         pi.add_chunk(p)          # ← fixed: add to pi, not cont
@@ -228,6 +229,7 @@ def make_python(x, y, w, h, name, nickname, description, inputs, outputs, code,
         p.str_("Name",         out["name"])
         p.str_("NickName",     out.get("nick", out["name"][:6]))
         p.bool_("Optional",    False)
+        p.int_("SourceCount",  0)
         po.add_chunk(p)          # ← fixed: add to po, not cont
     cont.add_chunk(po)           # ← add po to cont
 
