@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Archive name="Root">
-  <items count="2">
+  <items count="1">
     <item name="ArchiveVersion" type_name="gh_version" type_code="80">
       <Major>0</Major>
-      <Minor>1</Minor>
-      <Revision>1</Revision>
+      <Minor>2</Minor>
+      <Revision>2</Revision>
     </item>
-    <item name="Created" type_name="gh_date" type_code="8">638700000000000000</item>
   </items>
   <chunks count="1">
     <chunk name="Definition">
@@ -17,45 +16,31 @@
           <Revision>76</Revision>
         </item>
       </items>
-      <chunks count="3">
-        <chunk name="DefinitionHeader">
-          <items count="6">
-            <item name="HandleRhinoEvents" type_name="gh_bool" type_code="1">true</item>
-            <item name="HandleHopperEvents" type_name="gh_bool" type_code="1">false</item>
-            <item name="DocumentID" type_name="gh_guid" type_code="9">df19a71e-fd8f-44fe-a190-1189bbe75cce</item>
-            <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
-              <ARGB>255;150;150;150</ARGB>
-            </item>
-            <item name="PreviewSelected" type_name="gh_drawing_color" type_code="36">
-              <ARGB>255;0;142;194</ARGB>
-            </item>
+      <chunks count="4">
+        <chunk name="DocumentHeader">
+          <items count="3">
+            <item name="DocumentID" type_name="gh_guid" type_code="9">2cde4888-6d4e-4072-9b41-3bfcc142ad7d</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
+            <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
           </items>
         </chunk>
         <chunk name="DefinitionProperties">
-          <items count="4">
-            <item name="Name" type_name="gh_string" type_code="10">Test</item>
-            <item name="Description" type_name="gh_string" type_code="10">Minimal test</item>
-            <item name="Copyright" type_name="gh_string" type_code="10"/>
+          <items count="2">
             <item name="Date" type_name="gh_date" type_code="8">638700000000000000</item>
+            <item name="Description" type_name="gh_string" type_code="10">Minimal test</item>
           </items>
-          <chunks count="3">
+          <chunks count="1">
             <chunk name="Revisions">
               <items count="1">
                 <item name="RevisionCount" type_name="gh_int32" type_code="3">0</item>
               </items>
             </chunk>
-            <chunk name="Projection">
-              <items count="1">
-                <item name="Perspective" type_name="gh_bool" type_code="1">false</item>
-              </items>
-            </chunk>
-            <chunk name="Views">
-              <items count="1">
-                <item name="ViewCount" type_name="gh_int32" type_code="3">0</item>
-              </items>
-            </chunk>
           </chunks>
+        </chunk>
+        <chunk name="GHALibraries">
+          <items count="1">
+            <item name="Count" type_name="gh_int32" type_code="3">0</item>
+          </items>
         </chunk>
         <chunk name="DefinitionObjects">
           <items count="1">
@@ -69,17 +54,20 @@
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="8">
+                  <items count="11">
+                    <item name="Description" type_name="gh_string" type_code="10">Test slider</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d876b7cb-8584-4233-9da2-55e988b1ee97</item>
+                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
+                    <item name="Slider_Max" type_name="gh_double" type_code="6">10.0</item>
+                    <item name="Slider_Min" type_name="gh_double" type_code="6">0.0</item>
+                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
+                    <item name="Slider_Value" type_name="gh_double" type_code="6">5.0</item>
+                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">1</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Slider</item>
-                    <item name="Description" type_name="gh_string" type_code="10">Test slider</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7a5c15a0-8180-4fa2-8b5d-fe67570e5307</item>
-                    <item name="Preview" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Mutable" type_name="gh_bool" type_code="1">true</item>
-                    <item name="Enabled" type_name="gh_bool" type_code="1">true</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="2">
+                  <chunks count="1">
                     <chunk name="Attributes">
                       <items count="3">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
@@ -93,16 +81,6 @@
                           <Y>60</Y>
                         </item>
                         <item name="Selected" type_name="gh_bool" type_code="1">false</item>
-                      </items>
-                    </chunk>
-                    <chunk name="Slider">
-                      <items count="6">
-                        <item name="Value" type_name="gh_double" type_code="6">5.0</item>
-                        <item name="Min" type_name="gh_double" type_code="6">0.0</item>
-                        <item name="Max" type_name="gh_double" type_code="6">10.0</item>
-                        <item name="Digits" type_name="gh_int32" type_code="3">1</item>
-                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
-                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
                       </items>
                     </chunk>
                   </chunks>

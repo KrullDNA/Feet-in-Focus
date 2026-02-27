@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Archive name="Root">
-  <items count="2">
+  <items count="1">
     <item name="ArchiveVersion" type_name="gh_version" type_code="80">
       <Major>0</Major>
-      <Minor>1</Minor>
-      <Revision>1</Revision>
+      <Minor>2</Minor>
+      <Revision>2</Revision>
     </item>
-    <item name="Created" type_name="gh_date" type_code="8">638700000000000000</item>
   </items>
   <chunks count="1">
     <chunk name="Definition">
@@ -17,45 +16,31 @@
           <Revision>76</Revision>
         </item>
       </items>
-      <chunks count="3">
-        <chunk name="DefinitionHeader">
-          <items count="6">
-            <item name="HandleRhinoEvents" type_name="gh_bool" type_code="1">true</item>
-            <item name="HandleHopperEvents" type_name="gh_bool" type_code="1">false</item>
-            <item name="DocumentID" type_name="gh_guid" type_code="9">370f3595-2de7-437c-91c3-7a0df6636537</item>
-            <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
-              <ARGB>255;150;150;150</ARGB>
-            </item>
-            <item name="PreviewSelected" type_name="gh_drawing_color" type_code="36">
-              <ARGB>255;0;142;194</ARGB>
-            </item>
+      <chunks count="4">
+        <chunk name="DocumentHeader">
+          <items count="3">
+            <item name="DocumentID" type_name="gh_guid" type_code="9">66c8341a-49e0-413f-b32b-ecb137861b2f</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
+            <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
           </items>
         </chunk>
         <chunk name="DefinitionProperties">
-          <items count="4">
-            <item name="Name" type_name="gh_string" type_code="10">Test</item>
-            <item name="Description" type_name="gh_string" type_code="10">Minimal test</item>
-            <item name="Copyright" type_name="gh_string" type_code="10"/>
+          <items count="2">
             <item name="Date" type_name="gh_date" type_code="8">638700000000000000</item>
+            <item name="Description" type_name="gh_string" type_code="10">Minimal test</item>
           </items>
-          <chunks count="3">
+          <chunks count="1">
             <chunk name="Revisions">
               <items count="1">
                 <item name="RevisionCount" type_name="gh_int32" type_code="3">0</item>
               </items>
             </chunk>
-            <chunk name="Projection">
-              <items count="1">
-                <item name="Perspective" type_name="gh_bool" type_code="1">false</item>
-              </items>
-            </chunk>
-            <chunk name="Views">
-              <items count="1">
-                <item name="ViewCount" type_name="gh_int32" type_code="3">0</item>
-              </items>
-            </chunk>
           </chunks>
+        </chunk>
+        <chunk name="GHALibraries">
+          <items count="1">
+            <item name="Count" type_name="gh_int32" type_code="3">0</item>
+          </items>
         </chunk>
         <chunk name="DefinitionObjects">
           <items count="1">
@@ -69,14 +54,12 @@
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="10">
+                  <items count="8">
+                    <item name="Description" type_name="gh_string" type_code="10">Test panel</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ee09465c-80e9-4ae5-9ce6-3964d41637a7</item>
+                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Panel</item>
-                    <item name="Description" type_name="gh_string" type_code="10">Test panel</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fa32d50a-b8fe-4b44-b04e-048f6ee06fa8</item>
-                    <item name="Preview" type_name="gh_bool" type_code="1">true</item>
-                    <item name="Mutable" type_name="gh_bool" type_code="1">true</item>
-                    <item name="Enabled" type_name="gh_bool" type_code="1">true</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                     <item name="UserText" type_name="gh_string" type_code="10">Hello</item>
                     <item name="WrapText" type_name="gh_bool" type_code="1">true</item>
