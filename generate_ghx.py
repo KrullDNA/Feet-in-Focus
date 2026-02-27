@@ -111,6 +111,7 @@ def make_attributes(x, y, w, h):
     ch = Chunk("Attributes")
     ch.rect_("Bounds", x, y, w, h)
     ch.pt_("Pivot", x + w//2, y + h//2)
+    ch.bool_("Selected", False)
     return ch
 
 
@@ -128,19 +129,26 @@ def make_slider(x, y, nickname, min_v, max_v, value, digits=1):
     obj.str_("Name", "Number Slider")
 
     cont = Chunk("Container")
-    cont.str_("Description",   "Numeric slider for single values")
-    cont.guid_("InstanceGuid", inst)
-    cont.bool_("Locked",       False)
-    cont.dbl_("Slider_Max",    max_v)
-    cont.dbl_("Slider_Min",    min_v)
-    cont.int_("Slider_Type",   1)          # 1 = floating point
-    cont.dbl_("Slider_Value",  value)
-    cont.int_("Slider_Decimals", digits)
     cont.str_("Name",          "Number Slider")
     cont.str_("NickName",      nickname)
-    cont.bool_("Optional",     False)
+    cont.str_("Description",   "Numeric slider for single values")
+    cont.guid_("InstanceGuid", inst)
+    cont.bool_("Preview",      False)
+    cont.bool_("Mutable",      True)
+    cont.bool_("Enabled",      True)
     cont.int_("SourceCount",   0)
     cont.add_chunk(make_attributes(x, y, w, h))
+
+    # Slider sub-chunk (reference format)
+    sl = Chunk("Slider")
+    sl.dbl_("Value",       value)
+    sl.dbl_("Min",         min_v)
+    sl.dbl_("Max",         max_v)
+    sl.int_("Digits",      digits)
+    sl.int_("Interval",    0)
+    sl.int_("GripDisplay", 1)
+    cont.add_chunk(sl)
+
     obj.add_chunk(cont)
     return obj, inst
 
@@ -154,12 +162,13 @@ def make_panel(x, y, w, h, text, nickname="Panel"):
     obj.str_("Name", "Panel")
 
     cont = Chunk("Container")
-    cont.str_("Description",   "A panel for displaying data.")
-    cont.guid_("InstanceGuid", inst)
-    cont.bool_("Locked",       False)
     cont.str_("Name",          "Panel")
     cont.str_("NickName",      nickname)
-    cont.bool_("Optional",     False)
+    cont.str_("Description",   "A panel for displaying data.")
+    cont.guid_("InstanceGuid", inst)
+    cont.bool_("Preview",      True)
+    cont.bool_("Mutable",      True)
+    cont.bool_("Enabled",      True)
     cont.int_("SourceCount",   0)
     cont.str_("UserText",      text)
     cont.bool_("WrapText",     True)
@@ -191,16 +200,18 @@ def make_python(x, y, w, h, name, nickname, description, inputs, outputs, code,
     obj.str_("Name", "Python Script")
 
     cont = Chunk("Container")
-    cont.str_("CodeInput",      code)
-    cont.str_("Description",    description)
-    cont.bool_("HideCodeInput", True)
-    cont.bool_("HideOutput",    True)
-    cont.guid_("InstanceGuid",  comp_inst)
-    cont.bool_("IsAdvancedMode", False)
-    cont.bool_("Locked",        False)
-    cont.bool_("MarshalOutGuids", False)
     cont.str_("Name",           name)
     cont.str_("NickName",       nickname)
+    cont.str_("Description",    description)
+    cont.guid_("InstanceGuid",  comp_inst)
+    cont.bool_("Preview",       False)
+    cont.bool_("Mutable",       True)
+    cont.bool_("Enabled",       True)
+    cont.str_("CodeInput",      code)
+    cont.bool_("HideCodeInput", True)
+    cont.bool_("HideOutput",    True)
+    cont.bool_("IsAdvancedMode", False)
+    cont.bool_("MarshalOutGuids", False)
 
     # ── param_input ────────────────────────────────────────────────────────
     pi = Chunk("param_input")
@@ -917,13 +928,16 @@ def build_document():
 def build_root(objects):
     root = ET.Element("Archive", name="Root")
 
-    # Archive version items
-    items_root = ET.SubElement(root, "items", count="1")
+    # Root-level items: ArchiveVersion + Created  (reference has count="2")
+    items_root = ET.SubElement(root, "items", count="2")
     av = ET.SubElement(items_root, "item",
                        name="ArchiveVersion", type_name="gh_version", type_code="80")
-    ET.SubElement(av, "Major").text   = "0"
-    ET.SubElement(av, "Minor").text   = "2"
-    ET.SubElement(av, "Revision").text = "2"
+    ET.SubElement(av, "Major").text    = "0"
+    ET.SubElement(av, "Minor").text    = "1"
+    ET.SubElement(av, "Revision").text = "1"
+    cr = ET.SubElement(items_root, "item",
+                       name="Created", type_name="gh_date", type_code="8")
+    cr.text = "638700000000000000"
 
     # Single Definition chunk
     chunks_root = ET.SubElement(root, "chunks", count="1")
@@ -933,44 +947,65 @@ def build_root(objects):
     defn_items = ET.SubElement(defn, "items", count="1")
     pv = ET.SubElement(defn_items, "item",
                        name="plugin_version", type_name="gh_version", type_code="80")
-    ET.SubElement(pv, "Major").text   = "0"
-    ET.SubElement(pv, "Minor").text   = "9"
-    ET.SubElement(pv, "Revision").text = "76"
+    ET.SubElement(pv, "Major").text    = "0"
+    ET.SubElement(pv, "Minor").text    = "8"
+    ET.SubElement(pv, "Revision").text = "11"
 
-    defn_chunks = ET.SubElement(defn, "chunks", count="4")
+    # 3 definition sub-chunks: DefinitionHeader, DefinitionProperties, DefinitionObjects
+    defn_chunks = ET.SubElement(defn, "chunks", count="3")
 
-    # DocumentHeader
-    dh = ET.SubElement(defn_chunks, "chunk", name="DocumentHeader")
-    dh_items = ET.SubElement(dh, "items", count="3")
     def add_item(parent, **kw):
         return ET.SubElement(parent, "item", **kw)
-    i = add_item(dh_items, name="DocumentID", type_name="gh_guid", type_code="9")
-    i.text = ng()
-    i = add_item(dh_items, name="Preview", type_name="gh_string", type_code="10")
-    i.text = "Shaded"
-    i = add_item(dh_items, name="PreviewMeshType", type_name="gh_int32", type_code="3")
-    i.text = "1"
 
-    # DefinitionProperties
+    # ── DefinitionHeader (matches reference format) ──────────────────────────
+    dh = ET.SubElement(defn_chunks, "chunk", name="DefinitionHeader")
+    dh_items = ET.SubElement(dh, "items", count="6")
+    i = add_item(dh_items, name="HandleRhinoEvents",  type_name="gh_bool",   type_code="1")
+    i.text = "true"
+    i = add_item(dh_items, name="HandleHopperEvents", type_name="gh_bool",   type_code="1")
+    i.text = "false"
+    i = add_item(dh_items, name="DocumentID",         type_name="gh_guid",   type_code="9")
+    i.text = ng()
+    i = add_item(dh_items, name="PreviewNormal",      type_name="gh_drawing_color", type_code="36")
+    pn = ET.SubElement(i, "ARGB"); pn.text = "255;150;150;150"
+    i = add_item(dh_items, name="PreviewSelected",    type_name="gh_drawing_color", type_code="36")
+    ps = ET.SubElement(i, "ARGB"); ps.text = "255;0;142;194"
+    i = add_item(dh_items, name="Preview",            type_name="gh_string", type_code="10")
+    i.text = "Shaded"
+
+    # ── DefinitionProperties (matches reference format) ──────────────────────
     dp = ET.SubElement(defn_chunks, "chunk", name="DefinitionProperties")
-    dp_items = ET.SubElement(dp, "items", count="2")
-    i = add_item(dp_items, name="Date", type_name="gh_date", type_code="8")
-    i.text = "638700000000000000"
-    i = add_item(dp_items, name="Description", type_name="gh_string", type_code="10")
+    dp_items = ET.SubElement(dp, "items", count="4")
+    i = add_item(dp_items, name="Name",        type_name="gh_string", type_code="10")
     i.text = "Orthotic Insole Toolkit"
-    dp_chunks = ET.SubElement(dp, "chunks", count="1")
+    i = add_item(dp_items, name="Description", type_name="gh_string", type_code="10")
+    i.text = "Grasshopper definition for orthotic insole design tools."
+    i = add_item(dp_items, name="Copyright",   type_name="gh_string", type_code="10")
+    i.text = ""
+    i = add_item(dp_items, name="Date",        type_name="gh_date",   type_code="8")
+    i.text = "638700000000000000"
+
+    dp_chunks = ET.SubElement(dp, "chunks", count="3")
+
+    # Revisions sub-chunk
     rev = ET.SubElement(dp_chunks, "chunk", name="Revisions")
     ri  = ET.SubElement(ET.SubElement(rev, "items", count="1"), "item",
                         name="RevisionCount", type_name="gh_int32", type_code="3")
     ri.text = "0"
 
-    # GHALibraries (no external plugins needed)
-    ghal = ET.SubElement(defn_chunks, "chunk", name="GHALibraries")
-    gi   = ET.SubElement(ET.SubElement(ghal, "items", count="1"), "item",
-                         name="Count", type_name="gh_int32", type_code="3")
-    gi.text = "0"
+    # Projection sub-chunk (parallel/orthographic, matches reference)
+    proj = ET.SubElement(dp_chunks, "chunk", name="Projection")
+    proj_items = ET.SubElement(proj, "items", count="1")
+    i = add_item(proj_items, name="Perspective", type_name="gh_bool", type_code="1")
+    i.text = "false"
 
-    # DefinitionObjects
+    # Views sub-chunk
+    views = ET.SubElement(dp_chunks, "chunk", name="Views")
+    views_items = ET.SubElement(views, "items", count="1")
+    i = add_item(views_items, name="ViewCount", type_name="gh_int32", type_code="3")
+    i.text = "0"
+
+    # ── DefinitionObjects ────────────────────────────────────────────────────
     dobj = ET.SubElement(defn_chunks, "chunk", name="DefinitionObjects")
     doi  = ET.SubElement(ET.SubElement(dobj, "items", count="1"), "item",
                          name="ObjectCount", type_name="gh_int32", type_code="3")
