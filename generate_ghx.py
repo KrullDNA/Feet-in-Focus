@@ -111,7 +111,6 @@ def make_attributes(x, y, w, h):
     ch = Chunk("Attributes")
     ch.rect_("Bounds", x, y, w, h)
     ch.pt_("Pivot", x + w//2, y + h//2)
-    ch.bool_("Selected", False)
     return ch
 
 
@@ -120,9 +119,10 @@ def make_slider(x, y, nickname, min_v, max_v, value, digits=1):
     Number Slider component.
     Returns (Chunk, instance_guid).
     Wire source GUID = instance_guid (slider IS the output param).
+    Uses confirmed GH 1.0.8 / Rhino 8 format (Slider sub-chunk, Optional field).
     """
     inst = ng()
-    w, h = 200, 20
+    w, h = 160, 20
 
     obj = Chunk("Object")
     obj.guid_("GUID", GUID_SLIDER)
@@ -131,16 +131,21 @@ def make_slider(x, y, nickname, min_v, max_v, value, digits=1):
     cont = Chunk("Container")
     cont.str_("Description",   "Numeric slider for single values")
     cont.guid_("InstanceGuid", inst)
-    cont.bool_("Locked",       False)
-    cont.dbl_("Slider_Max",    max_v)
-    cont.dbl_("Slider_Min",    min_v)
-    cont.int_("Slider_Type",   1)          # 1 = floating point
-    cont.dbl_("Slider_Value",  value)
-    cont.int_("Slider_Decimals", digits)
     cont.str_("Name",          "Number Slider")
     cont.str_("NickName",      nickname)
+    cont.bool_("Optional",     False)
     cont.int_("SourceCount",   0)
     cont.add_chunk(make_attributes(x, y, w, h))
+
+    sldr = cont.add_chunk(Chunk("Slider"))
+    sldr.int_("Digits",      digits)
+    sldr.int_("GripDisplay", 1)
+    sldr.int_("Interval",    0)
+    sldr.dbl_("Max",         max_v)
+    sldr.dbl_("Min",         min_v)
+    sldr.int_("SnapCount",   0)
+    sldr.dbl_("Value",       value)
+
     obj.add_chunk(cont)
     return obj, inst
 
@@ -939,50 +944,68 @@ def build_root(objects):
     defn_items = ET.SubElement(defn, "items", count="1")
     pv = ET.SubElement(defn_items, "item",
                        name="plugin_version", type_name="gh_version", type_code="80")
-    ET.SubElement(pv, "Major").text    = "0"
-    ET.SubElement(pv, "Minor").text    = "9"
-    ET.SubElement(pv, "Revision").text = "76"
+    ET.SubElement(pv, "Major").text    = "1"
+    ET.SubElement(pv, "Minor").text    = "0"
+    ET.SubElement(pv, "Revision").text = "8"
 
-    # 4 definition sub-chunks (modern GH format)
-    defn_chunks = ET.SubElement(defn, "chunks", count="4")
+    # 5 definition sub-chunks (confirmed from real Rhino 8 / GH 1.0.8 GHX)
+    defn_chunks = ET.SubElement(defn, "chunks", count="5")
 
     def add_item(parent, **kw):
         return ET.SubElement(parent, "item", **kw)
 
-    # ── DocumentHeader ───────────────────────────────────────────────────────
+    # ── DocumentHeader (5 items — confirmed from real GHX) ───────────────────
     dh = ET.SubElement(defn_chunks, "chunk", name="DocumentHeader")
-    dh_items = ET.SubElement(dh, "items", count="3")
-    i = add_item(dh_items, name="DocumentID",     type_name="gh_guid",   type_code="9")
-    i.text = ng()
-    i = add_item(dh_items, name="Preview",        type_name="gh_string", type_code="10")
-    i.text = "Shaded"
-    i = add_item(dh_items, name="PreviewMeshType",type_name="gh_int32",  type_code="3")
-    i.text = "1"
+    dh_items = ET.SubElement(dh, "items", count="5")
+    add_item(dh_items, name="DocumentID",      type_name="gh_guid",          type_code="9").text  = ng()
+    add_item(dh_items, name="Preview",         type_name="gh_string",        type_code="10").text = "Shaded"
+    add_item(dh_items, name="PreviewMeshType", type_name="gh_int32",         type_code="3").text  = "1"
+    pn = add_item(dh_items, name="PreviewNormal",   type_name="gh_drawing_color", type_code="36")
+    ET.SubElement(pn, "ARGB").text = "100;150;0;0"
+    ps = add_item(dh_items, name="PreviewSelected", type_name="gh_drawing_color", type_code="36")
+    ET.SubElement(ps, "ARGB").text = "100;0;150;0"
 
-    # ── DefinitionProperties ─────────────────────────────────────────────────
+    # ── DefinitionProperties (4 items + 3 sub-chunks — confirmed) ────────────
     dp = ET.SubElement(defn_chunks, "chunk", name="DefinitionProperties")
-    dp_items = ET.SubElement(dp, "items", count="2")
-    i = add_item(dp_items, name="Date",        type_name="gh_date",   type_code="8")
-    i.text = "638700000000000000"
-    i = add_item(dp_items, name="Description", type_name="gh_string", type_code="10")
-    i.text = "Orthotic Insole Toolkit"
-    dp_chunks = ET.SubElement(dp, "chunks", count="1")
+    dp_items = ET.SubElement(dp, "items", count="4")
+    add_item(dp_items, name="Date",        type_name="gh_date",   type_code="8").text  = "638700000000000000"
+    add_item(dp_items, name="Description", type_name="gh_string", type_code="10").text = "Orthotic Insole Toolkit"
+    add_item(dp_items, name="KeepOpen",    type_name="gh_bool",   type_code="1").text  = "false"
+    add_item(dp_items, name="Name",        type_name="gh_string", type_code="10").text = "Orthotic_Insole_Toolkit"
+    dp_chunks = ET.SubElement(dp, "chunks", count="3")
     rev = ET.SubElement(dp_chunks, "chunk", name="Revisions")
-    ri  = ET.SubElement(ET.SubElement(rev, "items", count="1"), "item",
-                        name="RevisionCount", type_name="gh_int32", type_code="3")
-    ri.text = "0"
+    ET.SubElement(ET.SubElement(rev, "items", count="1"), "item",
+                  name="RevisionCount", type_name="gh_int32", type_code="3").text = "0"
+    proj = ET.SubElement(dp_chunks, "chunk", name="Projection")
+    proj_i = ET.SubElement(proj, "items", count="2")
+    tgt = add_item(proj_i, name="Target", type_name="gh_drawing_point", type_code="30")
+    ET.SubElement(tgt, "X").text = "15"; ET.SubElement(tgt, "Y").text = "15"
+    add_item(proj_i, name="Zoom", type_name="gh_single", type_code="5").text = "1.5"
+    views = ET.SubElement(dp_chunks, "chunk", name="Views")
+    ET.SubElement(ET.SubElement(views, "items", count="1"), "item",
+                  name="ViewCount", type_name="gh_int32", type_code="3").text = "0"
 
-    # ── GHALibraries (no external plugins needed) ─────────────────────────────
+    # ── RcpLayout (confirmed from real GHX) ──────────────────────────────────
+    rcp = ET.SubElement(defn_chunks, "chunk", name="RcpLayout")
+    ET.SubElement(ET.SubElement(rcp, "items", count="1"), "item",
+                  name="GroupCount", type_name="gh_int32", type_code="3").text = "0"
+
+    # ── GHALibraries (Grasshopper's own entry — confirmed from real GHX) ─────
     ghal = ET.SubElement(defn_chunks, "chunk", name="GHALibraries")
-    gi   = ET.SubElement(ET.SubElement(ghal, "items", count="1"), "item",
-                         name="Count", type_name="gh_int32", type_code="3")
-    gi.text = "0"
+    ET.SubElement(ET.SubElement(ghal, "items", count="1"), "item",
+                  name="Count", type_name="gh_int32", type_code="3").text = "1"
+    ghal_c = ET.SubElement(ghal, "chunks", count="1")
+    lib = ET.SubElement(ghal_c, "chunk", name="Library", index="0")
+    lib_i = ET.SubElement(lib, "items", count="4")
+    add_item(lib_i, name="Author",  type_name="gh_string", type_code="10").text = "Robert McNeel & Associates"
+    add_item(lib_i, name="Id",      type_name="gh_guid",   type_code="9").text  = "00000000-0000-0000-0000-000000000000"
+    add_item(lib_i, name="Name",    type_name="gh_string", type_code="10").text = "Grasshopper"
+    add_item(lib_i, name="Version", type_name="gh_string", type_code="10").text = "8.28.26041.11001"
 
     # ── DefinitionObjects ────────────────────────────────────────────────────
     dobj = ET.SubElement(defn_chunks, "chunk", name="DefinitionObjects")
-    doi  = ET.SubElement(ET.SubElement(dobj, "items", count="1"), "item",
-                         name="ObjectCount", type_name="gh_int32", type_code="3")
-    doi.text = str(len(objects))
+    ET.SubElement(ET.SubElement(dobj, "items", count="1"), "item",
+                  name="ObjectCount", type_name="gh_int32", type_code="3").text = str(len(objects))
     doc_chunks = ET.SubElement(dobj, "chunks", count=str(len(objects)))
     for i, obj in enumerate(objects):
         obj.index = i

@@ -11,36 +11,73 @@
     <chunk name="Definition">
       <items count="1">
         <item name="plugin_version" type_name="gh_version" type_code="80">
-          <Major>0</Major>
-          <Minor>9</Minor>
-          <Revision>76</Revision>
+          <Major>1</Major>
+          <Minor>0</Minor>
+          <Revision>8</Revision>
         </item>
       </items>
-      <chunks count="4">
+      <chunks count="5">
         <chunk name="DocumentHeader">
-          <items count="3">
-            <item name="DocumentID" type_name="gh_guid" type_code="9">906917ec-8419-4ab1-b051-363f6d227ac7</item>
+          <items count="5">
+            <item name="DocumentID" type_name="gh_guid" type_code="9">aab33347-60b9-4218-8d9b-0e702d357fb6</item>
             <item name="Preview" type_name="gh_string" type_code="10">Shaded</item>
             <item name="PreviewMeshType" type_name="gh_int32" type_code="3">1</item>
+            <item name="PreviewNormal" type_name="gh_drawing_color" type_code="36">
+              <ARGB>100;150;0;0</ARGB>
+            </item>
+            <item name="PreviewSelected" type_name="gh_drawing_color" type_code="36">
+              <ARGB>100;0;150;0</ARGB>
+            </item>
           </items>
         </chunk>
         <chunk name="DefinitionProperties">
-          <items count="2">
+          <items count="4">
             <item name="Date" type_name="gh_date" type_code="8">638700000000000000</item>
             <item name="Description" type_name="gh_string" type_code="10">Orthotic Insole Toolkit</item>
+            <item name="KeepOpen" type_name="gh_bool" type_code="1">false</item>
+            <item name="Name" type_name="gh_string" type_code="10">Orthotic_Insole_Toolkit</item>
           </items>
-          <chunks count="1">
+          <chunks count="3">
             <chunk name="Revisions">
               <items count="1">
                 <item name="RevisionCount" type_name="gh_int32" type_code="3">0</item>
               </items>
             </chunk>
+            <chunk name="Projection">
+              <items count="2">
+                <item name="Target" type_name="gh_drawing_point" type_code="30">
+                  <X>15</X>
+                  <Y>15</Y>
+                </item>
+                <item name="Zoom" type_name="gh_single" type_code="5">1.5</item>
+              </items>
+            </chunk>
+            <chunk name="Views">
+              <items count="1">
+                <item name="ViewCount" type_name="gh_int32" type_code="3">0</item>
+              </items>
+            </chunk>
           </chunks>
+        </chunk>
+        <chunk name="RcpLayout">
+          <items count="1">
+            <item name="GroupCount" type_name="gh_int32" type_code="3">0</item>
+          </items>
         </chunk>
         <chunk name="GHALibraries">
           <items count="1">
-            <item name="Count" type_name="gh_int32" type_code="3">0</item>
+            <item name="Count" type_name="gh_int32" type_code="3">1</item>
           </items>
+          <chunks count="1">
+            <chunk name="Library" index="0">
+              <items count="4">
+                <item name="Author" type_name="gh_string" type_code="10">Robert McNeel &amp; Associates</item>
+                <item name="Id" type_name="gh_guid" type_code="9">00000000-0000-0000-0000-000000000000</item>
+                <item name="Name" type_name="gh_string" type_code="10">Grasshopper</item>
+                <item name="Version" type_name="gh_string" type_code="10">8.28.26041.11001</item>
+              </items>
+            </chunk>
+          </chunks>
         </chunk>
         <chunk name="DefinitionObjects">
           <items count="1">
@@ -56,7 +93,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for displaying data.</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a0bbda04-57a1-4182-aa8f-a662529759f9</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2fe98f34-3b8e-464f-b8d7-6bbe77be5908</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Title</item>
@@ -67,7 +104,7 @@
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>30</X>
                           <Y>20</Y>
@@ -78,7 +115,6 @@
                           <X>220</X>
                           <Y>47</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -94,7 +130,7 @@
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for displaying data.</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0cf079b6-7c21-4f02-9190-30e8d006aad7</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fe4b1311-c08e-4169-9d60-6488f43b21c4</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Instructions</item>
@@ -110,7 +146,7 @@
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>30</X>
                           <Y>85</Y>
@@ -121,7 +157,6 @@
                           <X>220</X>
                           <Y>175</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -135,33 +170,38 @@
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">02640c6b-9794-4fe7-8e05-e2725ffcd7a5</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">0</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9b63b699-b60f-4263-9f10-42ab11a78a09</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">file_path (optional)</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>30</X>
                           <Y>276</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>130</X>
+                          <X>110</X>
                           <Y>286</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">0</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">0</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">0</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -264,7 +304,7 @@ except Exception as _e:
                     <item name="Description" type_name="gh_string" type_code="10">Imports foot scan STL/OBJ and extracts plantar surface</item>
                     <item name="HideCodeInput" type_name="gh_bool" type_code="1">true</item>
                     <item name="HideOutput" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7c050f6f-9123-4a28-b61c-ef24d0fd23a0</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f9fd585f-b57d-4811-826c-e2ec3a433637</item>
                     <item name="IsAdvancedMode" type_name="gh_bool" type_code="1">false</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="MarshalOutGuids" type_name="gh_bool" type_code="1">false</item>
@@ -280,7 +320,7 @@ except Exception as _e:
                         <chunk name="param" index="0">
                           <items count="7">
                             <item name="Description" type_name="gh_string" type_code="10">Path to STL/OBJ foot scan (optional)</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">5fc55b2e-bdb4-4b54-b24a-688ac4c7a78f</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">57c33c90-49fb-48fd-a243-a70da0fa5292</item>
                             <item name="Name" type_name="gh_string" type_code="10">file_path</item>
                             <item name="NickName" type_name="gh_string" type_code="10">fp</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -298,7 +338,7 @@ except Exception as _e:
                         <chunk name="param" index="1">
                           <items count="7">
                             <item name="Description" type_name="gh_string" type_code="10">Direct mesh connection (preferred - use Geometry Pipeline)</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">fb564317-dddd-4599-a0af-a4c396b7e89e</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">ace95371-c364-48bd-834c-86677cea1444</item>
                             <item name="Name" type_name="gh_string" type_code="10">scan_mesh</item>
                             <item name="NickName" type_name="gh_string" type_code="10">mesh</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -323,7 +363,7 @@ except Exception as _e:
                         <chunk name="param" index="0">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Full foot mesh</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">3f3f6699-f00e-4cdd-9cbe-59f6a0091162</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">e5d19db4-d90f-46e7-91f8-70144e4cf0d0</item>
                             <item name="Name" type_name="gh_string" type_code="10">foot_mesh</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Mesh</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -333,7 +373,7 @@ except Exception as _e:
                         <chunk name="param" index="1">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Plantar surface mesh</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">5f34c717-b176-4215-83b6-5664da2b965e</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">b8a3ba4c-3460-4e45-a70f-182abc9681c6</item>
                             <item name="Name" type_name="gh_string" type_code="10">plantar_mesh</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Plan</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -343,7 +383,7 @@ except Exception as _e:
                         <chunk name="param" index="2">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">2D plantar boundary at Z=0</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">ab342025-e804-4c5a-815d-d07b9947fc2c</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">3ce8b911-0e25-4349-833d-8919f1042bff</item>
                             <item name="Name" type_name="gh_string" type_code="10">flat_curve</item>
                             <item name="NickName" type_name="gh_string" type_code="10">FlatC</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -353,7 +393,7 @@ except Exception as _e:
                         <chunk name="param" index="3">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Foot dimensions</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">21611ff9-3f4b-46d8-87c3-80b3f0547f9b</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">0cb7c979-137f-44d4-9db6-b06028587a02</item>
                             <item name="Name" type_name="gh_string" type_code="10">mesh_info</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Info</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -363,7 +403,7 @@ except Exception as _e:
                       </chunks>
                     </chunk>
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>30</X>
                           <Y>300</Y>
@@ -374,7 +414,6 @@ except Exception as _e:
                           <X>130</X>
                           <Y>370</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -394,10 +433,10 @@ except Exception as _e:
                       <ARGB>150;100;160;220</ARGB>
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">A group of Grasshopper objects</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="0">02640c6b-9794-4fe7-8e05-e2725ffcd7a5</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="1">7c050f6f-9123-4a28-b61c-ef24d0fd23a0</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="0">9b63b699-b60f-4263-9f10-42ab11a78a09</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="1">f9fd585f-b57d-4811-826c-e2ec3a433637</item>
                     <item name="ID_Count" type_name="gh_int32" type_code="3">2</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">85a508f1-f427-4a82-99f7-670be72cf628</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d08e1843-6e31-4f02-b58e-2edbbf01cfce</item>
                     <item name="Name" type_name="gh_string" type_code="10">01 Foot Scan</item>
                     <item name="NickName" type_name="gh_string" type_code="10">01 Foot Scan</item>
                   </items>
@@ -416,7 +455,7 @@ except Exception as _e:
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for displaying data.</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">442464b1-7b77-48f5-9718-b4b71d1b71ca</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d3eae42d-973d-4b41-ab78-a5ce4cec58a0</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">S2 Title</item>
@@ -426,7 +465,7 @@ except Exception as _e:
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>280</X>
                           <Y>20</Y>
@@ -437,7 +476,6 @@ except Exception as _e:
                           <X>405</X>
                           <Y>35</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -451,33 +489,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f4a37093-bf24-4791-b715-8932b7096087</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">-15</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">-2.0</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">db2cf121-06d7-4034-a5c5-bfdaf517b950</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Offset mm (negative=inward)</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>280</X>
                           <Y>60</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>380</X>
+                          <X>360</X>
                           <Y>70</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">1</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">0</item>
+                        <item name="Min" type_name="gh_double" type_code="6">-15</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">-2.0</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -491,33 +534,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7d6fcb59-8cd7-48c6-8f85-eee830fbd7e2</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">1</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">0.3</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">2</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4d3854f7-c393-482b-895c-3ec156c12af8</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Smoothing 0-1</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>280</X>
                           <Y>90</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>380</X>
+                          <X>360</X>
                           <Y>100</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">2</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">1</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">0.3</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -568,7 +616,7 @@ except Exception as _e:
                     <item name="Description" type_name="gh_string" type_code="10">Generates the 2D insole perimeter from foot scan boundary</item>
                     <item name="HideCodeInput" type_name="gh_bool" type_code="1">true</item>
                     <item name="HideOutput" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">584b37fa-e9d9-45b7-8704-e5287af6da07</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">47372fe9-8c37-42f0-bb18-01978f593683</item>
                     <item name="IsAdvancedMode" type_name="gh_bool" type_code="1">false</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="MarshalOutGuids" type_name="gh_bool" type_code="1">false</item>
@@ -584,7 +632,7 @@ except Exception as _e:
                         <chunk name="param" index="0">
                           <items count="7">
                             <item name="Description" type_name="gh_string" type_code="10">Boundary curve from 01</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">af6f102d-1bd5-4bf1-9ef7-9e39da306cfc</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">320f7921-4d18-4c56-8bff-cd4771b42b9b</item>
                             <item name="Name" type_name="gh_string" type_code="10">flat_curve</item>
                             <item name="NickName" type_name="gh_string" type_code="10">FlatC</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -602,13 +650,13 @@ except Exception as _e:
                         <chunk name="param" index="1">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Inward offset in mm</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">7c3088e4-c187-4434-bd95-9d1495c8081b</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">54dae230-b643-40f7-a82a-0ef12cf088ce</item>
                             <item name="Name" type_name="gh_string" type_code="10">offset_mm</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Off</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">f4a37093-bf24-4791-b715-8932b7096087</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">db2cf121-06d7-4034-a5c5-bfdaf517b950</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -621,13 +669,13 @@ except Exception as _e:
                         <chunk name="param" index="2">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">0=sharp 1=smooth</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">06c0ba02-20c5-49ee-9a8a-fdeab9a5cdef</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">95f01297-842d-4d65-a746-6299e1ecf2c4</item>
                             <item name="Name" type_name="gh_string" type_code="10">smoothing</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Sm</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">7d6fcb59-8cd7-48c6-8f85-eee830fbd7e2</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">4d3854f7-c393-482b-895c-3ec156c12af8</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -647,7 +695,7 @@ except Exception as _e:
                         <chunk name="param" index="0">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">2D insole perimeter</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">e469ab9e-ce1e-445e-aaf1-67259cb3ef24</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">eb3a59db-2ed9-4e80-abd2-b61b2469c39e</item>
                             <item name="Name" type_name="gh_string" type_code="10">insole_outline</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Outl</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -657,7 +705,7 @@ except Exception as _e:
                         <chunk name="param" index="1">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Heel centre point</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">4da3dfa4-0b98-4cd7-865d-5103faab2765</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">b2c1bd41-98cb-4d8e-abb4-2f91bf7a8a9b</item>
                             <item name="Name" type_name="gh_string" type_code="10">heel_pt</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Heel</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -667,7 +715,7 @@ except Exception as _e:
                         <chunk name="param" index="2">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Toe centre point</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">68c54c1d-3c08-4393-b152-d383c0627516</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">3a004998-e569-46b6-82b9-a90fe2be23c0</item>
                             <item name="Name" type_name="gh_string" type_code="10">toe_pt</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Toe</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -677,7 +725,7 @@ except Exception as _e:
                         <chunk name="param" index="3">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Foot length mm</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">d16d2d54-8bf2-4e4f-863e-89245f0770a5</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">3b684ffc-a6d3-467f-ab6b-cb699f07b224</item>
                             <item name="Name" type_name="gh_string" type_code="10">insole_length</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Len</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -687,7 +735,7 @@ except Exception as _e:
                         <chunk name="param" index="4">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Foot width mm</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">cfee0be2-2424-4edb-86ad-4ec579779cd4</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">2c840042-fe37-47de-ad52-fde71b89cecb</item>
                             <item name="Name" type_name="gh_string" type_code="10">insole_width</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Wid</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -697,7 +745,7 @@ except Exception as _e:
                       </chunks>
                     </chunk>
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>280</X>
                           <Y>120</Y>
@@ -708,7 +756,6 @@ except Exception as _e:
                           <X>380</X>
                           <Y>200</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -728,11 +775,11 @@ except Exception as _e:
                       <ARGB>150;120;200;120</ARGB>
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">A group of Grasshopper objects</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="0">f4a37093-bf24-4791-b715-8932b7096087</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="1">7d6fcb59-8cd7-48c6-8f85-eee830fbd7e2</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="2">584b37fa-e9d9-45b7-8704-e5287af6da07</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="0">db2cf121-06d7-4034-a5c5-bfdaf517b950</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="1">4d3854f7-c393-482b-895c-3ec156c12af8</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="2">47372fe9-8c37-42f0-bb18-01978f593683</item>
                     <item name="ID_Count" type_name="gh_int32" type_code="3">3</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0e8acd7a-0755-4dd0-87b2-fa28cc7203e0</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">cd0d0b13-5a49-4cfc-b584-af1811318b07</item>
                     <item name="Name" type_name="gh_string" type_code="10">02 Insole Outline</item>
                     <item name="NickName" type_name="gh_string" type_code="10">02 Insole Outline</item>
                   </items>
@@ -751,7 +798,7 @@ except Exception as _e:
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for displaying data.</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">754083b1-f336-4b91-9926-102c07f22969</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">98c97953-ff09-446c-a816-1b0d512d7749</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">S3 Title</item>
@@ -761,7 +808,7 @@ except Exception as _e:
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>540</X>
                           <Y>20</Y>
@@ -772,7 +819,6 @@ except Exception as _e:
                           <X>665</X>
                           <Y>35</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -786,33 +832,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">12d33da3-b75c-4830-b2c9-6c1f619e9fbe</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">30</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">15.0</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">760ea376-d6c8-4f6f-b330-84d097037704</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Arch Height mm (0-30)</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>540</X>
                           <Y>60</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>640</X>
+                          <X>620</X>
                           <Y>70</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">1</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">30</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">15.0</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -826,33 +877,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">450aafdb-0976-47bc-82f1-01159ce587ff</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">1</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">0.35</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">2</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f252f14b-a927-4a9c-a38e-e982525f3aae</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Arch Peak 0=heel 1=toe</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>540</X>
                           <Y>90</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>640</X>
+                          <X>620</X>
                           <Y>100</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">2</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">1</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">0.35</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -866,33 +922,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b083f264-f696-43e3-8a9f-21210c59239f</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">60</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">10</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">30.0</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7d3d86b9-4125-401a-957c-3990e68f35ab</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Arch Width mm</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>540</X>
                           <Y>120</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>640</X>
+                          <X>620</X>
                           <Y>130</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">1</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">60</item>
+                        <item name="Min" type_name="gh_double" type_code="6">10</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">30.0</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -955,7 +1016,7 @@ except Exception as _e:
                     <item name="Description" type_name="gh_string" type_code="10">Generates medial arch geometry with adjustable height and position</item>
                     <item name="HideCodeInput" type_name="gh_bool" type_code="1">true</item>
                     <item name="HideOutput" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9ff782a6-8b7f-4c44-b870-ae41536f6235</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3158b54b-b276-480d-87da-c5bef51f787d</item>
                     <item name="IsAdvancedMode" type_name="gh_bool" type_code="1">false</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="MarshalOutGuids" type_name="gh_bool" type_code="1">false</item>
@@ -971,7 +1032,7 @@ except Exception as _e:
                         <chunk name="param" index="0">
                           <items count="7">
                             <item name="Description" type_name="gh_string" type_code="10">From 02</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">028899f4-0c1b-48ee-b7bd-ff69ff50108c</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">fae58aa5-e1b7-4276-a5e3-c8498a870bcb</item>
                             <item name="Name" type_name="gh_string" type_code="10">insole_outline</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Outl</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -989,13 +1050,13 @@ except Exception as _e:
                         <chunk name="param" index="1">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Arch height mm</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">dc5bcd92-301c-40d9-ac0b-7b5883494a60</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">62c2d26f-2f29-4880-b8d6-e5676543c339</item>
                             <item name="Name" type_name="gh_string" type_code="10">arch_height</item>
                             <item name="NickName" type_name="gh_string" type_code="10">AH</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">12d33da3-b75c-4830-b2c9-6c1f619e9fbe</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">760ea376-d6c8-4f6f-b330-84d097037704</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -1008,13 +1069,13 @@ except Exception as _e:
                         <chunk name="param" index="2">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Peak position along foot (0-1)</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">db2e5b7d-f85b-4054-9af4-c73eebd8834b</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">2e0dc229-6edc-4c9f-8aad-c65ceefb58b8</item>
                             <item name="Name" type_name="gh_string" type_code="10">arch_peak</item>
                             <item name="NickName" type_name="gh_string" type_code="10">AP</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">450aafdb-0976-47bc-82f1-01159ce587ff</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">f252f14b-a927-4a9c-a38e-e982525f3aae</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -1027,13 +1088,13 @@ except Exception as _e:
                         <chunk name="param" index="3">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Arch base width mm</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">11df3486-d0f9-4e17-a9d2-7f5da8b71a78</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">a7632254-31b2-449e-b76f-988d6c7acb66</item>
                             <item name="Name" type_name="gh_string" type_code="10">arch_width</item>
                             <item name="NickName" type_name="gh_string" type_code="10">AW</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">b083f264-f696-43e3-8a9f-21210c59239f</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">7d3d86b9-4125-401a-957c-3990e68f35ab</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -1046,7 +1107,7 @@ except Exception as _e:
                         <chunk name="param" index="4">
                           <items count="7">
                             <item name="Description" type_name="gh_string" type_code="10">R or L for foot side</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">8864ebbc-a415-4f36-97cf-99a4c68f0dd7</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">68c75bea-9cdf-4b57-b392-37e3d185d44d</item>
                             <item name="Name" type_name="gh_string" type_code="10">foot_side</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Side</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -1071,7 +1132,7 @@ except Exception as _e:
                         <chunk name="param" index="0">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">3D arch brep</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">b51f890b-991e-4015-97ba-7e2c993dd845</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">6bbae900-7afe-461c-9d8a-635e48a91587</item>
                             <item name="Name" type_name="gh_string" type_code="10">arch_surface</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Srf</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1081,7 +1142,7 @@ except Exception as _e:
                         <chunk name="param" index="1">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Height profile curve</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">8c0b26dc-152e-4a19-9171-fda8e9d4550c</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">432977c1-06e5-4424-9c46-4296d4320bb0</item>
                             <item name="Name" type_name="gh_string" type_code="10">arch_spine</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Spine</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1091,7 +1152,7 @@ except Exception as _e:
                         <chunk name="param" index="2">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Cross-section arcs</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">d91e5c6d-bc12-48b1-bff2-3ab335f9152b</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">5fe21222-bdf0-410a-8b4b-76e33123628d</item>
                             <item name="Name" type_name="gh_string" type_code="10">arch_profiles</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Prof</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1101,7 +1162,7 @@ except Exception as _e:
                       </chunks>
                     </chunk>
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>540</X>
                           <Y>160</Y>
@@ -1112,7 +1173,6 @@ except Exception as _e:
                           <X>640</X>
                           <Y>245</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -1128,7 +1188,7 @@ except Exception as _e:
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for displaying data.</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5f9842ff-a797-441f-9d02-8bb01ea5658f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b8aaa016-5b32-42ed-b656-911f25cd3f34</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">foot_side</item>
@@ -1138,7 +1198,7 @@ except Exception as _e:
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>540</X>
                           <Y>342</Y>
@@ -1149,7 +1209,6 @@ except Exception as _e:
                           <X>600</X>
                           <Y>372</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -1169,12 +1228,12 @@ except Exception as _e:
                       <ARGB>150;200;120;120</ARGB>
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">A group of Grasshopper objects</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="0">12d33da3-b75c-4830-b2c9-6c1f619e9fbe</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="1">450aafdb-0976-47bc-82f1-01159ce587ff</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="2">b083f264-f696-43e3-8a9f-21210c59239f</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="3">9ff782a6-8b7f-4c44-b870-ae41536f6235</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="0">760ea376-d6c8-4f6f-b330-84d097037704</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="1">f252f14b-a927-4a9c-a38e-e982525f3aae</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="2">7d3d86b9-4125-401a-957c-3990e68f35ab</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="3">3158b54b-b276-480d-87da-c5bef51f787d</item>
                     <item name="ID_Count" type_name="gh_int32" type_code="3">4</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">818213b7-2319-4b18-beb8-e4098dd36892</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d4537351-4067-4c1b-9da4-b3429f923493</item>
                     <item name="Name" type_name="gh_string" type_code="10">03 Arch</item>
                     <item name="NickName" type_name="gh_string" type_code="10">03 Arch</item>
                   </items>
@@ -1193,7 +1252,7 @@ except Exception as _e:
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for displaying data.</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8bd8a1d9-7fd4-4033-ad6a-dc4bef85bd63</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">01970405-ef4a-4ea8-aa80-6f903d70a160</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">S4 Title</item>
@@ -1203,7 +1262,7 @@ except Exception as _e:
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>800</X>
                           <Y>20</Y>
@@ -1214,7 +1273,6 @@ except Exception as _e:
                           <X>925</X>
                           <Y>35</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -1228,33 +1286,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4afc15a8-5436-4ddc-8df8-256f3721dbe5</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">25</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">12.0</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b96b6b6b-4094-4b5e-b49d-ed317ac3a74d</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Cup Depth mm</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>800</X>
                           <Y>60</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>900</X>
+                          <X>880</X>
                           <Y>70</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">1</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">25</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">12.0</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -1268,33 +1331,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1809c075-c0ce-4b04-ab75-d655477e54b2</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">30</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">15.0</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c40cf9fb-0358-4081-8cce-16ed87543e98</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Cup Angle degrees</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>800</X>
                           <Y>90</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>900</X>
+                          <X>880</X>
                           <Y>100</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">1</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">30</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">15.0</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -1308,33 +1376,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8e1ffaa6-c892-435f-b95c-84243ff26eb7</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">1</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">0.75</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">2</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fc9ed2dd-2603-4774-8d23-f370075627cb</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Cup Width 0-1</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>800</X>
                           <Y>120</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>900</X>
+                          <X>880</X>
                           <Y>130</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">2</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">1</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">0.75</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -1389,7 +1462,7 @@ except Exception as _e:
                     <item name="Description" type_name="gh_string" type_code="10">Parametric heel cup with depth and angle controls</item>
                     <item name="HideCodeInput" type_name="gh_bool" type_code="1">true</item>
                     <item name="HideOutput" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">be2a8a2c-d4b6-4619-9f4a-4af8bd4731ed</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3e9d3764-aed2-429c-97c1-910959b2415b</item>
                     <item name="IsAdvancedMode" type_name="gh_bool" type_code="1">false</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="MarshalOutGuids" type_name="gh_bool" type_code="1">false</item>
@@ -1405,7 +1478,7 @@ except Exception as _e:
                         <chunk name="param" index="0">
                           <items count="7">
                             <item name="Description" type_name="gh_string" type_code="10">From 02</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">6004034d-b3f8-4e04-a851-da53e2a0d2b6</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">b75c7b94-ec00-4903-b43a-2129462892cf</item>
                             <item name="Name" type_name="gh_string" type_code="10">insole_outline</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Outl</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -1423,13 +1496,13 @@ except Exception as _e:
                         <chunk name="param" index="1">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Cup depth mm</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">5db460a8-511c-4ba4-a01a-073e9f099d5f</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">7e16393e-d7d7-46c8-adac-5a3ed5b615ce</item>
                             <item name="Name" type_name="gh_string" type_code="10">cup_depth</item>
                             <item name="NickName" type_name="gh_string" type_code="10">CD</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">4afc15a8-5436-4ddc-8df8-256f3721dbe5</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">b96b6b6b-4094-4b5e-b49d-ed317ac3a74d</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -1442,13 +1515,13 @@ except Exception as _e:
                         <chunk name="param" index="2">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Cup wall angle degrees</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">3527a299-1aee-4fa1-a96f-cefa2919ce45</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">21d2c85f-dcc8-4469-a4e3-3956fcc0992b</item>
                             <item name="Name" type_name="gh_string" type_code="10">cup_angle</item>
                             <item name="NickName" type_name="gh_string" type_code="10">CA</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">1809c075-c0ce-4b04-ab75-d655477e54b2</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">c40cf9fb-0358-4081-8cce-16ed87543e98</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -1461,13 +1534,13 @@ except Exception as _e:
                         <chunk name="param" index="3">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Cup width as fraction of foot width</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">6d957142-8fee-4789-b111-dab0049d96e9</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">eac598fa-5b84-4ec0-93ca-e706ea317102</item>
                             <item name="Name" type_name="gh_string" type_code="10">cup_width_pct</item>
                             <item name="NickName" type_name="gh_string" type_code="10">CW</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">8e1ffaa6-c892-435f-b95c-84243ff26eb7</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">fc9ed2dd-2603-4774-8d23-f370075627cb</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -1487,7 +1560,7 @@ except Exception as _e:
                         <chunk name="param" index="0">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">3D heel cup brep</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">5ec9d4c1-a02b-4265-a18f-cd1be354b50d</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">679036a3-3ce6-4720-9e43-031fa36a7e1e</item>
                             <item name="Name" type_name="gh_string" type_code="10">heel_cup_surface</item>
                             <item name="NickName" type_name="gh_string" type_code="10">HCup</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1497,7 +1570,7 @@ except Exception as _e:
                         <chunk name="param" index="1">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Cup parameters</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">bfa88a1f-5d3e-4c70-acad-85ab1acda0cd</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">b3f885f2-eca5-449f-91db-47c6f43028dc</item>
                             <item name="Name" type_name="gh_string" type_code="10">heel_cup_info</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Info</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1507,7 +1580,7 @@ except Exception as _e:
                       </chunks>
                     </chunk>
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>800</X>
                           <Y>160</Y>
@@ -1518,7 +1591,6 @@ except Exception as _e:
                           <X>900</X>
                           <Y>225</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -1538,12 +1610,12 @@ except Exception as _e:
                       <ARGB>150;220;150;80</ARGB>
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">A group of Grasshopper objects</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="0">4afc15a8-5436-4ddc-8df8-256f3721dbe5</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="1">1809c075-c0ce-4b04-ab75-d655477e54b2</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="2">8e1ffaa6-c892-435f-b95c-84243ff26eb7</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="3">be2a8a2c-d4b6-4619-9f4a-4af8bd4731ed</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="0">b96b6b6b-4094-4b5e-b49d-ed317ac3a74d</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="1">c40cf9fb-0358-4081-8cce-16ed87543e98</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="2">fc9ed2dd-2603-4774-8d23-f370075627cb</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="3">3e9d3764-aed2-429c-97c1-910959b2415b</item>
                     <item name="ID_Count" type_name="gh_int32" type_code="3">4</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f4479674-3413-4edb-864f-4af636463457</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">9e9e961b-a03d-4141-9b8d-755c15abfe6e</item>
                     <item name="Name" type_name="gh_string" type_code="10">04 Heel Cup</item>
                     <item name="NickName" type_name="gh_string" type_code="10">04 Heel Cup</item>
                   </items>
@@ -1562,7 +1634,7 @@ except Exception as _e:
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for displaying data.</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a5826e14-e3ff-4450-8dd2-7bb08f70bb56</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">556ce3bb-3783-4789-9af2-67d056681943</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">S5 Title</item>
@@ -1572,7 +1644,7 @@ except Exception as _e:
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1060</X>
                           <Y>20</Y>
@@ -1583,7 +1655,6 @@ except Exception as _e:
                           <X>1185</X>
                           <Y>35</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -1597,33 +1668,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">fc469fbf-a8bd-43c9-8764-d2818254723a</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">15</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">6.0</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">29688a7a-7036-4e3c-babc-d32d195abecd</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Dome Height mm</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1060</X>
                           <Y>60</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1160</X>
+                          <X>1140</X>
                           <Y>70</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">1</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">15</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">6.0</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -1637,33 +1713,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d9a759f9-babc-41dc-8b93-36a210559adc</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">1</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">0.5</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">2</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3bd434bf-2846-4ff8-8e0b-af797973918f</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Dome X pos 0-1</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1060</X>
                           <Y>90</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1160</X>
+                          <X>1140</X>
                           <Y>100</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">2</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">1</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">0.5</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -1677,33 +1758,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">6f17515e-9a1b-4b41-a365-a8c73f577a4d</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">1</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">0.63</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">2</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">cf8d2c0e-bf39-4e27-be77-5b07b8eec1a0</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Dome Y pos 0-1</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1060</X>
                           <Y>120</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1160</X>
+                          <X>1140</X>
                           <Y>130</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">2</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">1</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">0.63</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -1717,33 +1803,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0abc6229-89c8-473b-9288-0ace9963e77f</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">40</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">5</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">20.0</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">1366c0d5-611d-4771-854d-05c20dd8a664</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Dome Radius mm</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1060</X>
                           <Y>150</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1160</X>
+                          <X>1140</X>
                           <Y>160</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">1</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">40</item>
+                        <item name="Min" type_name="gh_double" type_code="6">5</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">20.0</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -1791,7 +1882,7 @@ except Exception as _e:
                     <item name="Description" type_name="gh_string" type_code="10">Adds forefoot metatarsal support pad at adjustable position</item>
                     <item name="HideCodeInput" type_name="gh_bool" type_code="1">true</item>
                     <item name="HideOutput" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">2a792694-f5b0-445f-8299-d7149a7e96fa</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">5f5bd356-efac-421f-9aeb-46a50dbd2bd6</item>
                     <item name="IsAdvancedMode" type_name="gh_bool" type_code="1">false</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="MarshalOutGuids" type_name="gh_bool" type_code="1">false</item>
@@ -1807,7 +1898,7 @@ except Exception as _e:
                         <chunk name="param" index="0">
                           <items count="7">
                             <item name="Description" type_name="gh_string" type_code="10">From 02</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">4fb9fd07-778e-47a5-a3c6-bf00fd97c94f</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">d53b869a-21e7-4778-b45c-23e527915d47</item>
                             <item name="Name" type_name="gh_string" type_code="10">insole_outline</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Outl</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -1825,13 +1916,13 @@ except Exception as _e:
                         <chunk name="param" index="1">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Dome height mm</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">b0bf4a8e-6a23-4382-b052-0dec17ab17c3</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">a0bb6f54-add7-48bf-8dce-aa4eed21e956</item>
                             <item name="Name" type_name="gh_string" type_code="10">dome_height</item>
                             <item name="NickName" type_name="gh_string" type_code="10">DH</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">fc469fbf-a8bd-43c9-8764-d2818254723a</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">29688a7a-7036-4e3c-babc-d32d195abecd</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -1844,13 +1935,13 @@ except Exception as _e:
                         <chunk name="param" index="2">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Medial-lateral position (0-1)</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">04f41ee3-6949-4cf3-a913-ea653bf6d615</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">701921c9-3b66-47c0-8f18-7db4c6508f93</item>
                             <item name="Name" type_name="gh_string" type_code="10">dome_x_pct</item>
                             <item name="NickName" type_name="gh_string" type_code="10">DX</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">d9a759f9-babc-41dc-8b93-36a210559adc</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">3bd434bf-2846-4ff8-8e0b-af797973918f</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -1863,13 +1954,13 @@ except Exception as _e:
                         <chunk name="param" index="3">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Heel-toe position (0-1)</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">13c30074-1fa9-432a-a3e8-841616b60dfa</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">7ea932c4-a137-47d2-aae3-d29c2669a709</item>
                             <item name="Name" type_name="gh_string" type_code="10">dome_y_pct</item>
                             <item name="NickName" type_name="gh_string" type_code="10">DY</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">6f17515e-9a1b-4b41-a365-a8c73f577a4d</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">cf8d2c0e-bf39-4e27-be77-5b07b8eec1a0</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -1882,13 +1973,13 @@ except Exception as _e:
                         <chunk name="param" index="4">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Dome base radius mm</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">1923da78-f22d-4066-8924-13fbd5c81d6c</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">f2c03b1a-9685-4962-987e-54e100826c31</item>
                             <item name="Name" type_name="gh_string" type_code="10">dome_radius</item>
                             <item name="NickName" type_name="gh_string" type_code="10">DR</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">0abc6229-89c8-473b-9288-0ace9963e77f</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">1366c0d5-611d-4771-854d-05c20dd8a664</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -1908,7 +1999,7 @@ except Exception as _e:
                         <chunk name="param" index="0">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">3D metatarsal dome brep</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">bed161d9-a898-4bf0-95ab-08e14c61b863</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">39069dd3-186b-448c-8222-fee13ba590f2</item>
                             <item name="Name" type_name="gh_string" type_code="10">dome_surface</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Dome</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1918,7 +2009,7 @@ except Exception as _e:
                         <chunk name="param" index="1">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Dome centre point</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">21b752fa-41a5-474d-b0bf-7b09283ee7e9</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">f0b4ba87-30ff-45c8-bff8-c5ef6de7b491</item>
                             <item name="Name" type_name="gh_string" type_code="10">dome_centre</item>
                             <item name="NickName" type_name="gh_string" type_code="10">DC</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -1928,7 +2019,7 @@ except Exception as _e:
                       </chunks>
                     </chunk>
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1060</X>
                           <Y>180</Y>
@@ -1939,7 +2030,6 @@ except Exception as _e:
                           <X>1160</X>
                           <Y>265</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -1959,13 +2049,13 @@ except Exception as _e:
                       <ARGB>150;80;120;220</ARGB>
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">A group of Grasshopper objects</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="0">fc469fbf-a8bd-43c9-8764-d2818254723a</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="1">d9a759f9-babc-41dc-8b93-36a210559adc</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="2">6f17515e-9a1b-4b41-a365-a8c73f577a4d</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="3">0abc6229-89c8-473b-9288-0ace9963e77f</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="4">2a792694-f5b0-445f-8299-d7149a7e96fa</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="0">29688a7a-7036-4e3c-babc-d32d195abecd</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="1">3bd434bf-2846-4ff8-8e0b-af797973918f</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="2">cf8d2c0e-bf39-4e27-be77-5b07b8eec1a0</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="3">1366c0d5-611d-4771-854d-05c20dd8a664</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="4">5f5bd356-efac-421f-9aeb-46a50dbd2bd6</item>
                     <item name="ID_Count" type_name="gh_int32" type_code="3">5</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b28c471a-a9aa-46b3-8a78-9a1197b7b733</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c990fddf-9949-4128-bee7-21e4257469a6</item>
                     <item name="Name" type_name="gh_string" type_code="10">05 Metatarsal Dome</item>
                     <item name="NickName" type_name="gh_string" type_code="10">05 Metatarsal Dome</item>
                   </items>
@@ -1984,7 +2074,7 @@ except Exception as _e:
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for displaying data.</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">115e32df-c7fa-46e3-beb6-7c9e45b99a09</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">39565b10-a3fc-494d-bb37-18a7cf0fff38</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">S6 Title</item>
@@ -1994,7 +2084,7 @@ except Exception as _e:
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1320</X>
                           <Y>20</Y>
@@ -2005,7 +2095,6 @@ except Exception as _e:
                           <X>1445</X>
                           <Y>35</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -2019,33 +2108,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">c15c7d7e-20e3-4c8a-996f-6b1134bf47f5</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">10</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">0.0</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">f5437731-7511-4995-ae1c-96827e6d6006</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">RF Medial deg</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1320</X>
                           <Y>60</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1420</X>
+                          <X>1400</X>
                           <Y>70</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">1</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">10</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">0.0</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -2059,33 +2153,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b1b92bf6-ecc3-445c-acfe-f1237202478c</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">10</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">0.0</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b33e8adc-5023-4076-8944-9ac3a555b92b</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">RF Lateral deg</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1320</X>
                           <Y>90</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1420</X>
+                          <X>1400</X>
                           <Y>100</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">1</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">10</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">0.0</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -2099,33 +2198,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">682c536d-6133-45f3-9cfc-7245fc2cb90a</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">10</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">0.0</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">3c0c1155-4481-4442-ad63-54b5956bf7c7</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FF Medial deg</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1320</X>
                           <Y>120</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1420</X>
+                          <X>1400</X>
                           <Y>130</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">1</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">10</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">0.0</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -2139,33 +2243,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">cef48fd9-002c-4547-8ced-58df32ea7d12</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">10</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">0.0</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b91a4043-621f-4670-9881-27bde57303ec</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">FF Lateral deg</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1320</X>
                           <Y>150</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1420</X>
+                          <X>1400</X>
                           <Y>160</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">1</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">10</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">0.0</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -2223,7 +2332,7 @@ except Exception as _e:
                     <item name="Description" type_name="gh_string" type_code="10">Adds medial and lateral rearfoot and forefoot wedge angles</item>
                     <item name="HideCodeInput" type_name="gh_bool" type_code="1">true</item>
                     <item name="HideOutput" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8cf00f04-b4c1-40ef-a500-8651045df4f3</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">41a90b48-7243-459a-a2c1-838daa9b7a97</item>
                     <item name="IsAdvancedMode" type_name="gh_bool" type_code="1">false</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="MarshalOutGuids" type_name="gh_bool" type_code="1">false</item>
@@ -2239,7 +2348,7 @@ except Exception as _e:
                         <chunk name="param" index="0">
                           <items count="7">
                             <item name="Description" type_name="gh_string" type_code="10">From 02</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">0a16c184-28c9-49ec-81b7-4643aef3c7a4</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">7da3ddc9-9697-4676-8f2a-5f319c5ae00d</item>
                             <item name="Name" type_name="gh_string" type_code="10">insole_outline</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Outl</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -2257,13 +2366,13 @@ except Exception as _e:
                         <chunk name="param" index="1">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Rearfoot medial post degrees</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">fba346fb-8622-4ce5-85c5-e597b546f546</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">b7f1ca10-00b4-4e53-9cbc-db9f6302f332</item>
                             <item name="Name" type_name="gh_string" type_code="10">rf_med_deg</item>
                             <item name="NickName" type_name="gh_string" type_code="10">RFM</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">c15c7d7e-20e3-4c8a-996f-6b1134bf47f5</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">f5437731-7511-4995-ae1c-96827e6d6006</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -2276,13 +2385,13 @@ except Exception as _e:
                         <chunk name="param" index="2">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Rearfoot lateral post degrees</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">4c400939-93cc-4633-9344-b0b70d07fdc8</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">9b731fe6-e45f-4165-a565-c1091dbd47b8</item>
                             <item name="Name" type_name="gh_string" type_code="10">rf_lat_deg</item>
                             <item name="NickName" type_name="gh_string" type_code="10">RFL</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">b1b92bf6-ecc3-445c-acfe-f1237202478c</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">b33e8adc-5023-4076-8944-9ac3a555b92b</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -2295,13 +2404,13 @@ except Exception as _e:
                         <chunk name="param" index="3">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Forefoot medial post degrees</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">3635d79a-70f2-45df-9a37-cb0fe0b1ae78</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">c4dbfbc5-2258-48f6-8e4f-898b4dad8dba</item>
                             <item name="Name" type_name="gh_string" type_code="10">ff_med_deg</item>
                             <item name="NickName" type_name="gh_string" type_code="10">FFM</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">682c536d-6133-45f3-9cfc-7245fc2cb90a</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">3c0c1155-4481-4442-ad63-54b5956bf7c7</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -2314,13 +2423,13 @@ except Exception as _e:
                         <chunk name="param" index="4">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Forefoot lateral post degrees</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">48e30a52-f0fa-4d45-8893-778fcf4f47a8</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">a66d2ac8-47dc-4abd-b532-4e9c5476efd7</item>
                             <item name="Name" type_name="gh_string" type_code="10">ff_lat_deg</item>
                             <item name="NickName" type_name="gh_string" type_code="10">FFL</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">cef48fd9-002c-4547-8ced-58df32ea7d12</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">b91a4043-621f-4670-9881-27bde57303ec</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -2340,7 +2449,7 @@ except Exception as _e:
                         <chunk name="param" index="0">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Rearfoot wedge brep</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">628b119a-d7cc-4e0d-8fbe-f4a0d3698cef</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">7e136ba2-2cfa-40b2-81bb-5b7bf3f47214</item>
                             <item name="Name" type_name="gh_string" type_code="10">rf_post_brep</item>
                             <item name="NickName" type_name="gh_string" type_code="10">RF</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2350,7 +2459,7 @@ except Exception as _e:
                         <chunk name="param" index="1">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Forefoot wedge brep</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">8eb9be24-1635-4819-9007-6511233b5be1</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">484c0597-9ef3-44fe-950d-79ac07b59706</item>
                             <item name="Name" type_name="gh_string" type_code="10">ff_post_brep</item>
                             <item name="NickName" type_name="gh_string" type_code="10">FF</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2360,7 +2469,7 @@ except Exception as _e:
                         <chunk name="param" index="2">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Posting summary</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">fad90ac1-85da-4c77-963e-a616127699c8</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">cb547857-6e3f-4a9d-baf6-0dde0f6b2249</item>
                             <item name="Name" type_name="gh_string" type_code="10">posting_info</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Info</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2370,7 +2479,7 @@ except Exception as _e:
                       </chunks>
                     </chunk>
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1320</X>
                           <Y>180</Y>
@@ -2381,7 +2490,6 @@ except Exception as _e:
                           <X>1420</X>
                           <Y>265</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -2401,13 +2509,13 @@ except Exception as _e:
                       <ARGB>150;200;200;80</ARGB>
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">A group of Grasshopper objects</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="0">c15c7d7e-20e3-4c8a-996f-6b1134bf47f5</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="1">b1b92bf6-ecc3-445c-acfe-f1237202478c</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="2">682c536d-6133-45f3-9cfc-7245fc2cb90a</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="3">cef48fd9-002c-4547-8ced-58df32ea7d12</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="4">8cf00f04-b4c1-40ef-a500-8651045df4f3</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="0">f5437731-7511-4995-ae1c-96827e6d6006</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="1">b33e8adc-5023-4076-8944-9ac3a555b92b</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="2">3c0c1155-4481-4442-ad63-54b5956bf7c7</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="3">b91a4043-621f-4670-9881-27bde57303ec</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="4">41a90b48-7243-459a-a2c1-838daa9b7a97</item>
                     <item name="ID_Count" type_name="gh_int32" type_code="3">5</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0617d317-e475-44a9-a655-bf42152dd52f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">b0223343-0c9c-49af-ae82-fbb0ef2b005e</item>
                     <item name="Name" type_name="gh_string" type_code="10">06 Posting</item>
                     <item name="NickName" type_name="gh_string" type_code="10">06 Posting</item>
                   </items>
@@ -2426,7 +2534,7 @@ except Exception as _e:
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for displaying data.</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">748903e3-75f8-4eb7-9693-c2d4e9e9dc07</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">d388a7e0-f175-4623-a556-86e1361f0850</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">S7 Title</item>
@@ -2436,7 +2544,7 @@ except Exception as _e:
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1580</X>
                           <Y>20</Y>
@@ -2447,7 +2555,6 @@ except Exception as _e:
                           <X>1705</X>
                           <Y>35</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -2461,33 +2568,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">69cd8738-8876-43f8-ad3c-2c1a392ff5a9</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">4</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0.5</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">1.5</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0448f503-00d7-499a-87ee-c0de23bc36cc</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Top Cover mm</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1580</X>
                           <Y>60</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1680</X>
+                          <X>1660</X>
                           <Y>70</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">1</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">4</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0.5</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">1.5</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -2501,33 +2613,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8d5fb14f-dae1-4b21-9e73-411b4a8117da</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">10</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">1</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">4.0</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">4b21af83-4934-4f8d-a02b-53b7d1e02bf3</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Shell mm</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1580</X>
                           <Y>90</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1680</X>
+                          <X>1660</X>
                           <Y>100</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">1</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">10</item>
+                        <item name="Min" type_name="gh_double" type_code="6">1</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">4.0</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -2541,33 +2658,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">8ecbe3e0-ff00-4f21-8aec-ead4150fab98</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">6</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">1</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">2.0</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">82f1a1e1-43ce-423e-9a73-37f6a108a778</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Base mm</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1580</X>
                           <Y>120</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1680</X>
+                          <X>1660</X>
                           <Y>130</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">1</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">6</item>
+                        <item name="Min" type_name="gh_double" type_code="6">1</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">2.0</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -2626,7 +2748,7 @@ except Exception as _e:
                     <item name="Description" type_name="gh_string" type_code="10">Sets top cover, shell and base layer thicknesses and assembles solid insole</item>
                     <item name="HideCodeInput" type_name="gh_bool" type_code="1">true</item>
                     <item name="HideOutput" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">249a7dd0-3423-43a7-8bec-a39196d67631</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">7faa51a8-232f-483a-9660-fffb7ddf4b74</item>
                     <item name="IsAdvancedMode" type_name="gh_bool" type_code="1">false</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="MarshalOutGuids" type_name="gh_bool" type_code="1">false</item>
@@ -2642,7 +2764,7 @@ except Exception as _e:
                         <chunk name="param" index="0">
                           <items count="7">
                             <item name="Description" type_name="gh_string" type_code="10">From 02</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">7fa70761-4f0e-4705-9718-c1a0f2fd25c9</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">e71cb380-aa40-41a8-9d1f-ad4224661e11</item>
                             <item name="Name" type_name="gh_string" type_code="10">insole_outline</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Outl</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -2660,7 +2782,7 @@ except Exception as _e:
                         <chunk name="param" index="1">
                           <items count="7">
                             <item name="Description" type_name="gh_string" type_code="10">From 03</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">25e0e94b-d17e-4be8-a6c0-d0631324b001</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">53d95506-81ba-4a9f-8dbc-9389f091eb71</item>
                             <item name="Name" type_name="gh_string" type_code="10">arch_surface</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Arch</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -2678,7 +2800,7 @@ except Exception as _e:
                         <chunk name="param" index="2">
                           <items count="7">
                             <item name="Description" type_name="gh_string" type_code="10">From 04</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">1c1318c3-da9e-4d57-8933-6f2c4f0843fb</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">3a40e6fa-3b8d-481b-b06f-b8e040590359</item>
                             <item name="Name" type_name="gh_string" type_code="10">heel_cup_surface</item>
                             <item name="NickName" type_name="gh_string" type_code="10">HCup</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -2696,7 +2818,7 @@ except Exception as _e:
                         <chunk name="param" index="3">
                           <items count="7">
                             <item name="Description" type_name="gh_string" type_code="10">From 05</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">4d1d2e32-1c69-459e-8530-505541b44320</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">4bbaca46-c345-453b-9764-ca9db2ccf495</item>
                             <item name="Name" type_name="gh_string" type_code="10">dome_surface</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Dome</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -2714,7 +2836,7 @@ except Exception as _e:
                         <chunk name="param" index="4">
                           <items count="7">
                             <item name="Description" type_name="gh_string" type_code="10">From 06</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">b4737bc7-0020-4b18-820a-85c0a502fe68</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">d34c384f-2026-490e-9bbc-e65d7e83f13e</item>
                             <item name="Name" type_name="gh_string" type_code="10">rf_post_brep</item>
                             <item name="NickName" type_name="gh_string" type_code="10">RFP</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -2732,7 +2854,7 @@ except Exception as _e:
                         <chunk name="param" index="5">
                           <items count="7">
                             <item name="Description" type_name="gh_string" type_code="10">From 06</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">3ff5ec16-c91e-40c1-b09b-47958bbb05c7</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">a1671840-6940-4a66-817b-aa23eb0dce4a</item>
                             <item name="Name" type_name="gh_string" type_code="10">ff_post_brep</item>
                             <item name="NickName" type_name="gh_string" type_code="10">FFP</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -2750,13 +2872,13 @@ except Exception as _e:
                         <chunk name="param" index="6">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Top cover thickness mm</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">3dbf84db-68d5-4d19-a0af-5853f53bf701</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">114a2d08-f8a0-459b-8051-6ca85f2659a2</item>
                             <item name="Name" type_name="gh_string" type_code="10">top_cover_mm</item>
                             <item name="NickName" type_name="gh_string" type_code="10">TC</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">69cd8738-8876-43f8-ad3c-2c1a392ff5a9</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">0448f503-00d7-499a-87ee-c0de23bc36cc</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -2769,13 +2891,13 @@ except Exception as _e:
                         <chunk name="param" index="7">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Shell thickness mm</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">b2c07eec-49fc-4a3f-b07a-4181231ba58f</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">52a2a67d-ad3a-4cbb-9e0c-0815a502f63f</item>
                             <item name="Name" type_name="gh_string" type_code="10">shell_mm</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Sh</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">8d5fb14f-dae1-4b21-9e73-411b4a8117da</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">4b21af83-4934-4f8d-a02b-53b7d1e02bf3</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -2788,13 +2910,13 @@ except Exception as _e:
                         <chunk name="param" index="8">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Base thickness mm</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">e321dd15-78b3-4b69-87f7-9c882d3475e7</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">79bc7204-dbba-4ebc-9f68-2dbea28a64bc</item>
                             <item name="Name" type_name="gh_string" type_code="10">base_mm</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Ba</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">8ecbe3e0-ff00-4f21-8aec-ead4150fab98</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">82f1a1e1-43ce-423e-9a73-37f6a108a778</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -2814,7 +2936,7 @@ except Exception as _e:
                         <chunk name="param" index="0">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Shell brep (outline extruded)</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">74227c7e-df07-4b43-b06a-69a6f7d2cc5e</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">fcb3dd05-c05a-4535-9c39-13f4151532e9</item>
                             <item name="Name" type_name="gh_string" type_code="10">insole_shell</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Shell</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2824,7 +2946,7 @@ except Exception as _e:
                         <chunk name="param" index="1">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Complete insole solid brep</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">5aa7f02f-51c7-4984-b7d9-3a15570fa3d6</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">d54d55b4-55bd-42d6-8940-8664a865fcea</item>
                             <item name="Name" type_name="gh_string" type_code="10">insole_solid</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Solid</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2834,7 +2956,7 @@ except Exception as _e:
                         <chunk name="param" index="2">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Layer thickness summary</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">d9e29b85-7d0f-4c7f-b616-d71ba0315607</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">1aee93ff-cf61-4b95-8d37-5e4b331c2f22</item>
                             <item name="Name" type_name="gh_string" type_code="10">assembly_info</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Info</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -2844,7 +2966,7 @@ except Exception as _e:
                       </chunks>
                     </chunk>
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1580</X>
                           <Y>160</Y>
@@ -2855,7 +2977,6 @@ except Exception as _e:
                           <X>1680</X>
                           <Y>300</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -2875,12 +2996,12 @@ except Exception as _e:
                       <ARGB>150;120;200;200</ARGB>
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">A group of Grasshopper objects</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="0">69cd8738-8876-43f8-ad3c-2c1a392ff5a9</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="1">8d5fb14f-dae1-4b21-9e73-411b4a8117da</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="2">8ecbe3e0-ff00-4f21-8aec-ead4150fab98</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="3">249a7dd0-3423-43a7-8bec-a39196d67631</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="0">0448f503-00d7-499a-87ee-c0de23bc36cc</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="1">4b21af83-4934-4f8d-a02b-53b7d1e02bf3</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="2">82f1a1e1-43ce-423e-9a73-37f6a108a778</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="3">7faa51a8-232f-483a-9660-fffb7ddf4b74</item>
                     <item name="ID_Count" type_name="gh_int32" type_code="3">4</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">ca3a604f-bf7e-4ba8-8c37-a1b8750d001f</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a249ecad-b216-4650-8f12-0f38297deea9</item>
                     <item name="Name" type_name="gh_string" type_code="10">07 Assembly</item>
                     <item name="NickName" type_name="gh_string" type_code="10">07 Assembly</item>
                   </items>
@@ -2899,7 +3020,7 @@ except Exception as _e:
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for displaying data.</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">217fdf8d-9c7e-4557-bbc3-1cdb0acf43ea</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">04466ce6-2ade-41da-bd8f-0fc4cbeb7f34</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">S8 Title</item>
@@ -2909,7 +3030,7 @@ except Exception as _e:
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1840</X>
                           <Y>20</Y>
@@ -2920,7 +3041,6 @@ except Exception as _e:
                           <X>1965</X>
                           <Y>35</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -2934,33 +3054,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">309348a6-fe00-4a63-aa5d-b849d5f9c9c1</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">25</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">10.0</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">1</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">834965b6-e095-4168-95a1-0020f5a0acb6</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Rocker Angle deg</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1840</X>
                           <Y>60</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1940</X>
+                          <X>1920</X>
                           <Y>70</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">1</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">25</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">10.0</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -2974,33 +3099,38 @@ except Exception as _e:
               </items>
               <chunks count="1">
                 <chunk name="Container">
-                  <items count="11">
+                  <items count="6">
                     <item name="Description" type_name="gh_string" type_code="10">Numeric slider for single values</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">0ecf5dc2-386a-4a87-8e7f-87723269b0fb</item>
-                    <item name="Locked" type_name="gh_bool" type_code="1">false</item>
-                    <item name="Slider_Max" type_name="gh_double" type_code="6">1</item>
-                    <item name="Slider_Min" type_name="gh_double" type_code="6">0</item>
-                    <item name="Slider_Type" type_name="gh_int32" type_code="3">1</item>
-                    <item name="Slider_Value" type_name="gh_double" type_code="6">0.5</item>
-                    <item name="Slider_Decimals" type_name="gh_int32" type_code="3">2</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">392a5147-d768-49aa-9d58-4046743848ac</item>
                     <item name="Name" type_name="gh_string" type_code="10">Number Slider</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Rocker Apex 0=heel 1=toe</item>
+                    <item name="Optional" type_name="gh_bool" type_code="1">false</item>
                     <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
                   </items>
-                  <chunks count="1">
+                  <chunks count="2">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1840</X>
                           <Y>90</Y>
-                          <W>200</W>
+                          <W>160</W>
                           <H>20</H>
                         </item>
                         <item name="Pivot" type_name="gh_drawing_pointf" type_code="31">
-                          <X>1940</X>
+                          <X>1920</X>
                           <Y>100</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
+                      </items>
+                    </chunk>
+                    <chunk name="Slider">
+                      <items count="7">
+                        <item name="Digits" type_name="gh_int32" type_code="3">2</item>
+                        <item name="GripDisplay" type_name="gh_int32" type_code="3">1</item>
+                        <item name="Interval" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Max" type_name="gh_double" type_code="6">1</item>
+                        <item name="Min" type_name="gh_double" type_code="6">0</item>
+                        <item name="SnapCount" type_name="gh_int32" type_code="3">0</item>
+                        <item name="Value" type_name="gh_double" type_code="6">0.5</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -3058,7 +3188,7 @@ except Exception as _e:
                     <item name="Description" type_name="gh_string" type_code="10">Outputs NURBS solid ready for CNC milling or 3D printing, plus 2D rocker outline</item>
                     <item name="HideCodeInput" type_name="gh_bool" type_code="1">true</item>
                     <item name="HideOutput" type_name="gh_bool" type_code="1">true</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">060bd9a3-1610-4a25-8c23-c16d1baf2191</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">90b9ecd9-8615-4cea-ac35-7960268321af</item>
                     <item name="IsAdvancedMode" type_name="gh_bool" type_code="1">false</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="MarshalOutGuids" type_name="gh_bool" type_code="1">false</item>
@@ -3074,7 +3204,7 @@ except Exception as _e:
                         <chunk name="param" index="0">
                           <items count="7">
                             <item name="Description" type_name="gh_string" type_code="10">From 07 - complete insole brep</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">e179ba6a-f3d2-49a7-b484-9651913eba70</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">c01b25cd-73e4-4e1f-b750-18eb7fa74dc9</item>
                             <item name="Name" type_name="gh_string" type_code="10">insole_solid</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Sol</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -3092,7 +3222,7 @@ except Exception as _e:
                         <chunk name="param" index="1">
                           <items count="7">
                             <item name="Description" type_name="gh_string" type_code="10">From 02 - 2D perimeter</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">da5a4da3-01ff-4385-9966-19f3eed66dfd</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">8241eab7-d5fe-4f4a-93cf-8757509fbe23</item>
                             <item name="Name" type_name="gh_string" type_code="10">insole_outline</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Outl</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
@@ -3110,13 +3240,13 @@ except Exception as _e:
                         <chunk name="param" index="2">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Rocker bottom angle degrees</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">07e7029c-6dc6-4fe1-9791-29f95e96e11a</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">7af471c2-cf03-444a-9b98-7437afafae7b</item>
                             <item name="Name" type_name="gh_string" type_code="10">rocker_angle</item>
                             <item name="NickName" type_name="gh_string" type_code="10">RA</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">309348a6-fe00-4a63-aa5d-b849d5f9c9c1</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">834965b6-e095-4168-95a1-0020f5a0acb6</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -3129,13 +3259,13 @@ except Exception as _e:
                         <chunk name="param" index="3">
                           <items count="8">
                             <item name="Description" type_name="gh_string" type_code="10">Rocker apex position (0-1)</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">ea67de28-474b-4fdb-bc01-bde8c5979f79</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">1ea2f8c4-002e-4c48-b96f-fe39e0ea654e</item>
                             <item name="Name" type_name="gh_string" type_code="10">rocker_apex_pct</item>
                             <item name="NickName" type_name="gh_string" type_code="10">RAP</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">true</item>
                             <item name="Access" type_name="gh_int32" type_code="3">0</item>
                             <item name="SourceCount" type_name="gh_int32" type_code="3">1</item>
-                            <item name="Source" type_name="gh_guid" type_code="9" index="0">0ecf5dc2-386a-4a87-8e7f-87723269b0fb</item>
+                            <item name="Source" type_name="gh_guid" type_code="9" index="0">392a5147-d768-49aa-9d58-4046743848ac</item>
                           </items>
                           <chunks count="1">
                             <chunk name="TypeHint">
@@ -3155,7 +3285,7 @@ except Exception as _e:
                         <chunk name="param" index="0">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Export-ready NURBS solid for CNC or 3D print</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">1710c5bc-9006-48d2-8b50-7aa18b42e5a2</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">8b281775-0256-41cd-bd96-d6cbee0ccef6</item>
                             <item name="Name" type_name="gh_string" type_code="10">export_brep</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Brep</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3165,7 +3295,7 @@ except Exception as _e:
                         <chunk name="param" index="1">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">2D rocker-bottom contact outline</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">5cb47896-afd9-44ca-93a3-f37628ed0c35</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">8f2335f4-a583-4f70-b432-298400ec1934</item>
                             <item name="Name" type_name="gh_string" type_code="10">rocker_outline</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Rock</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3175,7 +3305,7 @@ except Exception as _e:
                         <chunk name="param" index="2">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Rocker profile side-view curve</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">e454b364-6f8c-4414-ba0c-cc03803b6161</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">ae055502-481c-4ef9-95ca-44cb43227471</item>
                             <item name="Name" type_name="gh_string" type_code="10">rocker_profile</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Prof</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3185,7 +3315,7 @@ except Exception as _e:
                         <chunk name="param" index="3">
                           <items count="6">
                             <item name="Description" type_name="gh_string" type_code="10">Export status</item>
-                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">34a9456f-06b2-473c-8030-82b7cf84f116</item>
+                            <item name="InstanceGuid" type_name="gh_guid" type_code="9">bf215b36-64a1-4617-a098-77bd10a341fa</item>
                             <item name="Name" type_name="gh_string" type_code="10">export_info</item>
                             <item name="NickName" type_name="gh_string" type_code="10">Info</item>
                             <item name="Optional" type_name="gh_bool" type_code="1">false</item>
@@ -3195,7 +3325,7 @@ except Exception as _e:
                       </chunks>
                     </chunk>
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1840</X>
                           <Y>150</Y>
@@ -3206,7 +3336,6 @@ except Exception as _e:
                           <X>1940</X>
                           <Y>225</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -3222,7 +3351,7 @@ except Exception as _e:
                 <chunk name="Container">
                   <items count="8">
                     <item name="Description" type_name="gh_string" type_code="10">A panel for displaying data.</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">948568d1-e375-4d33-9bb8-7e584452a95b</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">a1eeca4f-9c00-42db-a7b7-8341606f8f33</item>
                     <item name="Locked" type_name="gh_bool" type_code="1">false</item>
                     <item name="Name" type_name="gh_string" type_code="10">Panel</item>
                     <item name="NickName" type_name="gh_string" type_code="10">Export Notes</item>
@@ -3238,7 +3367,7 @@ Shoe Last integration: connect last surface
                   </items>
                   <chunks count="1">
                     <chunk name="Attributes">
-                      <items count="3">
+                      <items count="2">
                         <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
                           <X>1840</X>
                           <Y>320</Y>
@@ -3249,7 +3378,6 @@ Shoe Last integration: connect last surface
                           <X>2030</X>
                           <Y>450</Y>
                         </item>
-                        <item name="Selected" type_name="gh_bool" type_code="1">false</item>
                       </items>
                     </chunk>
                   </chunks>
@@ -3269,11 +3397,11 @@ Shoe Last integration: connect last surface
                       <ARGB>150;200;80;120</ARGB>
                     </item>
                     <item name="Description" type_name="gh_string" type_code="10">A group of Grasshopper objects</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="0">309348a6-fe00-4a63-aa5d-b849d5f9c9c1</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="1">0ecf5dc2-386a-4a87-8e7f-87723269b0fb</item>
-                    <item name="ID" type_name="gh_guid" type_code="9" index="2">060bd9a3-1610-4a25-8c23-c16d1baf2191</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="0">834965b6-e095-4168-95a1-0020f5a0acb6</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="1">392a5147-d768-49aa-9d58-4046743848ac</item>
+                    <item name="ID" type_name="gh_guid" type_code="9" index="2">90b9ecd9-8615-4cea-ac35-7960268321af</item>
                     <item name="ID_Count" type_name="gh_int32" type_code="3">3</item>
-                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">139405c2-1119-4811-93a6-84a1d256da1b</item>
+                    <item name="InstanceGuid" type_name="gh_guid" type_code="9">85cec65f-4925-4179-9f7d-c5246e6c3ecd</item>
                     <item name="Name" type_name="gh_string" type_code="10">08 Export+Rocker</item>
                     <item name="NickName" type_name="gh_string" type_code="10">08 Export+Rocker</item>
                   </items>
