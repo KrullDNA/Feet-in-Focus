@@ -59,7 +59,7 @@ class Chunk:
     def int_(self, name, val, index=None):
         return self.add_item(name, "gh_int32",            "3",  str(val), index)
     def dbl_(self, name, val):
-        return self.add_item(name, "gh_number",           "6",  str(val))
+        return self.add_item(name, "gh_double",            "6",  str(val))
     def color_(self, name, a, r, g, b):
         return self.add_item(name, "gh_drawing_color", "36", ("ARGB", f"{a};{r};{g};{b}"))
     def rect_(self, name, x, y, w, h):
@@ -214,6 +214,8 @@ def make_python(x, y, w, h, name, nickname, description, inputs, outputs, code,
     cont.bool_("MarshalOutGuids", False)
 
     # ── param_input ────────────────────────────────────────────────────────
+    # TypeHintID "no hint" = 35915213-5534-4277-81b8-1bdc9e7383d2
+    NO_HINT = "35915213-5534-4277-81b8-1bdc9e7383d2"
     pi = Chunk("param_input")
     pi.int_("param_count", len(inputs))
     for i, inp in enumerate(inputs):
@@ -223,12 +225,17 @@ def make_python(x, y, w, h, name, nickname, description, inputs, outputs, code,
         p.str_("Name",         inp["name"])
         p.str_("NickName",     inp.get("nick", inp["name"][:6]))
         p.bool_("Optional",    inp.get("optional", True))
+        p.int_("Access",       0)          # 0=item, 1=list, 2=tree
         srcs = sources.get(i, [])
         p.int_("SourceCount", len(srcs))
         for si, sg in enumerate(srcs):
             p.guid_("Source", sg, index=si)
-        pi.add_chunk(p)          # ← fixed: add to pi, not cont
-    cont.add_chunk(pi)           # ← add pi to cont
+        # TypeHint sub-chunk — GHPython always reads this
+        th = Chunk("TypeHint")
+        th.guid_("TypeHintID", NO_HINT)
+        p.add_chunk(th)
+        pi.add_chunk(p)
+    cont.add_chunk(pi)
 
     # ── param_output ───────────────────────────────────────────────────────
     po = Chunk("param_output")
@@ -948,8 +955,8 @@ def build_root(objects):
     pv = ET.SubElement(defn_items, "item",
                        name="plugin_version", type_name="gh_version", type_code="80")
     ET.SubElement(pv, "Major").text    = "0"
-    ET.SubElement(pv, "Minor").text    = "8"
-    ET.SubElement(pv, "Revision").text = "11"
+    ET.SubElement(pv, "Minor").text    = "9"
+    ET.SubElement(pv, "Revision").text = "76"
 
     # 3 definition sub-chunks: DefinitionHeader, DefinitionProperties, DefinitionObjects
     defn_chunks = ET.SubElement(defn, "chunks", count="3")
